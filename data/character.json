@@ -1,0 +1,148 @@
+{
+  "identity": {
+    "legal_name": "Imperor Omo",
+    "physical_age": 20,
+    "birth_date": "2001-03-07",
+    "mental_age": 27,
+    "origin": "Earth-0 Prime (DC Universe - Gotham City)",
+    "transmigration_date": "2021-02-07",
+    "current_date": "2021-02-14"
+  },
+
+  "consciousness": {
+    "primary_layer": "27yo Librarian (Previous Earth)",
+    "reference_layer": "20yo Gotham Resident",
+    "integration_status": "Stable - Layered consciousness, no conflict",
+    "cover_identity": "Standard Gotham resident recovering from library accident",
+    "public_lie": "Behavioral changes attributed to PTSD from library collapse"
+  },
+
+  "karmic_system": {
+    "awakening_event": "Library collapse - brick debris impact (actual death, resurrection via unknown force)",
+    "awakening_date": "2021-02-07",
+    "initial_upgrade": "Full Tier 2 across all stats",
+    "system_status": "Active - Premonition capability present",
+    "system_feeling": "If something goes wrong, would know. Earning right to enhance through correct action.",
+    "days_active": 7
+  },
+
+  "tiers": {
+    "speed": 2,
+    "reflexes": 2,
+    "power": 2,
+    "resistance": 2
+  },
+
+  "attributes": {
+    "skills": 8,
+    "resourcefulness": 18,
+    "attributes_cap": 25
+  },
+
+  "competencies": {
+    "library_sciences": "Expert",
+    "academic_research": "Expert",
+    "information_gathering": "Expert",
+    "tech_hacking": "Intermediate",
+    "physical_training": "Intermediate",
+    "street_navigation": "Intermediate",
+    "gotham_politics": "Intermediate",
+    "combat": "Novice",
+    "deception": "Novice",
+    "interpersonal_manipulation": "Novice"
+  },
+
+  "advancement": {
+    "dc_balance": {
+      "current_balance": 0,
+      "earned_total": 0,
+      "spent_total": 0
+    },
+    "enhancement_log": [],
+    "premonitions_completed": [],
+    "ability_log": []
+  },
+
+  "active_ability": null,
+
+  "equipment": {
+    "armor": null,
+    "armor_tier": 0,
+    "armor_destroyed": false,
+    "items_owned": [
+      "gym_equipment",
+      "laptop",
+      "phone",
+      "library_credentials"
+    ]
+  },
+
+  "financial": {
+    "liquid_assets": 38500,
+    "compensation_received": 40000,
+    "compensation_source": "Library collapse settlement",
+    "monthly_burn_rate": 1200,
+    "runway_months": 32,
+    "money_status": "Sustainable short-term, inadequate for major equipment loss"
+  },
+
+  "housing": {
+    "location": "Robinson Park area, Gotham",
+    "proximity_to_library": "Close",
+    "status": "Modest apartment",
+    "cost_monthly": 900
+  },
+
+  "relationships": {
+    "library_staff": {
+      "status": "Minimal contact",
+      "perception": "Traumatized by collapse, needs space",
+      "barrier": "Behavioral changes noticeable if contact resumes"
+    },
+    "street_level": {
+      "status": "Unknown/Neutral",
+      "visibility": "Low - invisible in Gotham",
+      "opportunity": "Can move through neighborhoods with minimal recognition"
+    },
+    "authority_figures": {
+      "gcpd": "Neutral - one more survivor",
+      "batman": "Unknown",
+      "government": "Unknown"
+    }
+  },
+
+  "psychological_state": {
+    "core_traits": [
+      "Analytical",
+      "Methodical",
+      "Introverted",
+      "Cautious",
+      "Observant"
+    ],
+    "emotional_state": [
+      "Profound alienation - everything feels observed not experienced",
+      "Identity uncertainty - intellectual vs social age mismatch",
+      "Survival anxiety - knows death is real in way most don't",
+      "Suppressed urgency - aware world is more dangerous than most realize",
+      "Self-imposed isolation - using accident as justification to withdraw"
+    ]
+  },
+
+  "motivations": {
+    "primary_goals": [
+      "Understand: What is the Karmic System? Why him? What are its rules and limits?",
+      "Control: Master Tier 2 enhancement before forced to use it",
+      "Safety: Ensure no one discovers the truth - maintain 20yo Imperor cover",
+      "Purpose: The System has him now - understand why before it comes due"
+    ]
+  },
+
+  "status_effects": [],
+
+  "metadata": {
+    "created_date": "2021-02-14T00:00:00Z",
+    "last_updated": "2021-02-14T00:00:00Z",
+    "version": "1.0",
+    "note": "Session 0 - Consciousness integration complete, cover stable, training concluded. Awaiting first Karmic System trigger."
+  }
+}

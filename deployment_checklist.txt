@@ -1,0 +1,189 @@
+================================================================================
+DEPLOYMENT CHECKLIST - IMPEROR OMO CAMPAIGN SYSTEM
+================================================================================
+
+YOU NOW HAVE:
+
+1. ✅ flask.py (Complete v3.0)
+   - 70+ endpoints (calculations, state management, advancement, abilities)
+   - All mechanics implemented (combat, premonitions, enhancements, armor)
+   - Returns FACTS ONLY (no interpretation)
+   - Location: ./data/flask_py_complete_v3.txt (rename to flask.py)
+
+2. ✅ character.json (Imperor Omo initial state)
+   - Tier 2 all stats (from Karmic System awakening)
+   - Skills: 8, Resourcefulness: 18
+   - No active ability (enhancement 0)
+   - No armor, no status effects
+   - DC balance: 0 (no premonitions yet)
+   - Location: ./data/character.json
+
+3. ✅ world_state.json (DC Universe Feb 2021)
+   - 8 escalation indicators (Gotham instability, crime vacuum, Magistrate program, etc.)
+   - Gotham districts with faction control
+   - Major threats (Arkham escapees, supernatural rifts, organized crime)
+   - NPC contacts (Oracle, Batman, Red Hood, etc.)
+   - Campaign progression timeline (phases 1-4)
+   - Location: ./data/world_state.json
+
+4. ✅ heroes_db.json (You provided)
+   - Hero database for NPC lookups
+   - Location: ./data/heroes_db.json
+
+5. ✅ space_custom_instructions.txt (4000 chars)
+   - Flask URL and endpoint reference
+   - Character sheet artifact behavior (30-sec auto-refresh)
+   - CRITICAL: Mentions free context window advantage
+   - LLM1 workflow during sessions
+   - Error handling patterns
+   - Location: Perplexity Space custom instructions field
+
+6. ✅ llm_framework_md.txt (Markdown, optimized for LLM)
+   - SECTION A: System mechanics (tiers, attributes, competencies, DC, armor, abilities)
+   - SECTION B: Narration protocol (what LLM controls/doesn't)
+   - SECTION C: Data source reference (character.json, world_state.json, RULES)
+   - SECTION D: Flask endpoint integration (when to call what)
+   - SECTION E: World escalation (indicators, thresholds, narrative integration)
+   - SECTION F: Competencies (open-ended, narrative-driven)
+   - SECTION G: Character sheet as free context window (KEY FEATURE)
+   - SECTION H: Error handling
+   - SECTION I: Premonition resolution flow (detailed example)
+   - SECTION J: Quick reference (before/during session checklist)
+   - Location: Uploaded as Space reference document
+
+7. ✅ character_sheet_artifact (React component)
+   - Live character.json display
+   - Auto-refreshes every 30 seconds (configurable)
+   - Displays: Tiers, Attributes, Competencies, DC Balance, Ability, Equipment, Status Effects
+   - Dark Gotham aesthetic
+   - Read-only (no manual edits - all changes via Flask)
+   - Location: Perplexity Space artifact code
+
+================================================================================
+SETUP INSTRUCTIONS
+================================================================================
+
+STEP 1: Flask Server Setup
+  - Copy flask.py to your local development directory
+  - Install Flask: `pip install flask flask-cors`
+  - Place character.json, world_state.json, heroes_db.json in ./data/
+  - Run: `python final-flask.py`
+  - Should start on localhost:5000
+
+STEP 2: ngrok Tunnel
+  - Download/install ngrok
+  - Run: `ngrok http 5000`
+  - Copy tunnel URL: https://unquenchable-anastacia-nonobstetricitly.ngrok-free.dev/
+  - (Note: This URL will change, update in space_custom_instructions with new URL)
+
+STEP 3: Perplexity Space Setup
+  - Create new Space (or use existing)
+  - Copy space_custom_instructions.txt into Custom Instructions field
+  - Replace ngrok URL with your actual tunnel URL
+  - Upload llm_framework_md.txt as a reference document in the Space
+  - Save character_sheet_artifact code (will paste into first message)
+
+STEP 4: Session Initialization
+  - Start campaign in Space
+  - Paste character_sheet_artifact code (React component)
+  - Space renders artifact, auto-loads Flask /character/get_state
+  - LLM sees character sheet code (free context window access)
+  - Begin narration
+
+================================================================================
+CRITICAL FEATURES
+================================================================================
+
+1. FREE CONTEXT WINDOW ACCESS
+   - Character sheet code is always visible in artifact
+   - LLM reads HTML directly → no token cost
+   - No need to regenerate JSON in chat
+   - This is why we use artifact instead of chat JSON
+
+2. AUTO-REFRESH MECHANISM
+   - Every 30 seconds, artifact refreshes from Flask
+   - Silent update (no chat notification unless data changed)
+   - Prevents timeout issues
+   - Player sees live state always
+
+3. NO NARRATIVE LEADING
+   - Flask returns FACTS (stat advantages, DC numbers, costs)
+   - LLM narrates CONSEQUENCES (what those facts mean)
+   - Never Flask: "Actor wins", "Defender advantaged"
+   - Always Flask: "Speed +10, Power -40" → LLM interprets
+
+4. COMPETENCIES ARE OPEN-ENDED
+   - Framework describes system, never mentions Omo
+   - LLM applies competencies narratively
+   - Player develops new competencies as story progresses
+   - No tier-based calculations, purely narrative
+
+5. SECONDARY LLM BETWEEN SESSIONS
+   - Separate LLM calls Flask to update world state
+   - Updates escalation indicators (threat levels increase)
+   - Advances campaign date
+   - LLM1 (narrator) narrates from updated world next session
+
+================================================================================
+SESSION WORKFLOW (Quick Reference)
+================================================================================
+
+BEFORE SESSION START:
+  1. Player launches Space
+  2. Artifact renders (connects to Flask, fetches character.json)
+  3. LLM reads character sheet code (free access to state)
+  4. LLM loads llm_framework_md.txt (narration protocol)
+
+DURING SESSION:
+  1. Player acts (describe action)
+  2. LLM narrates setup (environment, NPC reactions)
+  3. If mechanical check needed:
+     - Check artifact code (tiers, attributes, DC - already there)
+     - Call appropriate Flask endpoint
+     - Get factual response
+  4. LLM narrates consequences (converts numbers to story)
+  5. Character sheet updates next 30-sec refresh
+
+EXAMPLE: "I try to convince the gang leader to stand down"
+  → LLM narrates setup (who, where, stakes)
+  → Check artifact: Deception competency level? (assume Novice)
+  → Narrate difficulty based on competency
+  → No Flask call (not mechanical, LLM decides success narratively)
+  → Narrate outcome
+
+EXAMPLE: "I fight the Scarecrow"
+  → LLM narrates combat start
+  → Call Flask /calculate/combat with both stats
+  → Flask returns: Speed +5, Reflexes -10, Power +8, Resistance -30
+  → LLM narrates: "You're faster but can't read his moves. You hit harder but he's more resilient."
+  → Player responds
+  → Continue or next round
+
+================================================================================
+IMPORTANT NOTES
+================================================================================
+
+- Don't share flask.py code with user (backend, not UI)
+- Never modify character.json manually (Flask manages it)
+- Don't ask "What's your current DC?" → Check artifact code
+- Always use Flask as truth source (server authoritative)
+- Character sheet refresh is silent (user doesn't see "Updating...")
+- Competencies are LLM domain (no Flask calculations)
+- Error messages from Flask should be narrated as world consequences
+
+================================================================================
+READY TO START SESSION 1
+================================================================================
+
+You have everything needed. Start by:
+  1. Create Space with custom instructions
+  2. Upload llm_framework_md.txt
+  3. Paste character_sheet_artifact code
+  4. Initialize flask.py + ngrok
+  5. Type: "Session 1 begins. I wake up."
+  
+The system will handle the rest.
+
+Good luck, and remember: The Karmic System is watching.
+
+================================================================================

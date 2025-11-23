@@ -1,0 +1,479 @@
+{
+  "universe": {
+    "name": "DC Prime Earth (Earth-0)",
+    "era": "Infinite Frontier",
+    "era_start_date": "2021-03-01",
+    "campaign_start_date": "2021-02-14",
+    "continuity_notes": "Restoration of pre-Crisis history + New 52 framework. All heroes remember complete timeline.",
+    "recent_cataclysm": "Dark Nights: Death Metal (resolved, timeline restored)"
+  },
+
+  "current_date": "2021-02-14T00:00:00Z",
+
+  "escalation_indicators": {
+    "gotham_instability": {
+      "value": 45,
+      "timestamp": "2021-02-14T00:00:00Z",
+      "description": "Recovery from Joker War + A-Day Arkham destruction",
+      "escalating_per_week": 3,
+      "threshold_65": "Magistrate Program activates full deployment",
+      "threshold_75": "Gotham martial law - Batman forced into open conflict"
+    },
+    "organized_crime_power_vacuum": {
+      "value": 52,
+      "timestamp": "2021-02-14T00:00:00Z",
+      "description": "Penguin absent from Gotham (recovering in Metropolis), Red Hood expanding territory",
+      "escalating_per_week": 2,
+      "threshold_60": "Full gang war breaks out - GCPD loses street control",
+      "threshold_80": "Multiple factions control districts - anarchy state"
+    },
+    "batman_resources_depleted": {
+      "value": 78,
+      "timestamp": "2021-02-14T00:00:00Z",
+      "description": "Wayne fortune stripped via Joker War, multiple allies injured/scattered",
+      "escalating_per_week": 0,
+      "threshold_85": "Batman forced to seek external funding",
+      "threshold_100": "Batman leaves Gotham (late 2021 canon event)"
+    },
+    "magistrate_program_deployment": {
+      "value": 38,
+      "timestamp": "2021-02-14T00:00:00Z",
+      "description": "Simon Saint pitching program to new Mayor Nakano, initial negotiations",
+      "escalating_per_week": 5,
+      "threshold_65": "Magistrate authorization vote passes",
+      "threshold_75": "First Peacekeeper units deployed to East End",
+      "threshold_90": "Martial law enacted, full deployment (Fear State begins)"
+    },
+    "arkham_asylum_crisis": {
+      "value": 100,
+      "timestamp": "2021-02-07T00:00:00Z",
+      "description": "A-Day event - Complete destruction, 50+ escapees, structural collapse",
+      "escalating_per_week": 0,
+      "threshold_100": "Crisis state - permanent (Arkham Tower rebuild underway)",
+      "permanent_consequence": "Gotham prison system fractured, new Arkham Tower construction"
+    },
+    "supernatural_activity": {
+      "value": 12,
+      "timestamp": "2021-02-14T00:00:00Z",
+      "description": "Post-Death Metal baseline, minor dimensional rifts stabilizing",
+      "escalating_per_week": 1,
+      "threshold_40": "Supernatural entities begin manifesting publicly",
+      "threshold_70": "Reality instability warnings (Crisis precursor)"
+    },
+    "metahuman_emergence": {
+      "value": 35,
+      "timestamp": "2021-02-14T00:00:00Z",
+      "description": "Post-Infinite Frontier spike in new metahumans, powers emerging",
+      "escalating_per_week": 2,
+      "threshold_60": "Metahuman crime wave begins",
+      "threshold_85": "Public panic, anti-metahuman legislation"
+    },
+    "justice_league_coordination": {
+      "value": 68,
+      "timestamp": "2021-02-14T00:00:00Z",
+      "description": "JL Active and coordinated post-Death Metal, Superman public identity, new roster",
+      "escalating_per_week": -1,
+      "threshold_75": "JL fully engaged in world threats",
+      "threshold_50": "JL fragmented, minimal coordination"
+    }
+  },
+
+  "gotham_city_state": {
+    "current_condition": "Crisis Recovery + Crime Wave Beginning",
+    "districts_control": {
+      "otisburg": {
+        "control": "Stable",
+        "crime_level": 3,
+        "primary_faction": "GCPD / Batman",
+        "status": "Safe zone, Batman sympathetic"
+      },
+      "robinson_park": {
+        "control": "Stable",
+        "crime_level": 2,
+        "primary_faction": "Public / Library",
+        "status": "Imperor Omo's sanctuary"
+      },
+      "diamond_district": {
+        "control": "Corporate",
+        "crime_level": 5,
+        "primary_faction": "Organized theft rings",
+        "status": "High security, financial hub"
+      },
+      "east_end": {
+        "control": "Contested",
+        "crime_level": 8,
+        "primary_faction": "Penguin operatives + Red Hood",
+        "status": "Active gang warfare, unstable"
+      },
+      "crime_alley": {
+        "control": "Chaotic",
+        "crime_level": 9,
+        "primary_faction": "Street gangs, independent operators",
+        "status": "Extreme danger, avoid"
+      },
+      "amusement_mile": {
+        "control": "Abandoned",
+        "crime_level": 7,
+        "primary_faction": "None (history haunted)",
+        "status": "Dangerous, historical significance"
+      }
+    },
+    "major_factions": {
+      "batman_family": {
+        "leader": "Bruce Wayne",
+        "tier_estimate": 18,
+        "status": "Operational but understaffed",
+        "resources": "Severely depleted (Joker War aftermath)",
+        "operatives": ["Batman", "Nightwing", "Batgirl", "Red Robin", "Red Hood", "Black Bat", "Signal"],
+        "morale": "Determined but strained",
+        "recent_losses": "Alfred Pennyworth (Death Metal), Wayne fortune stripped"
+      },
+      "oracle_network": {
+        "leader": "Barbara Gordon",
+        "tier_estimate_physical": 3,
+        "tier_estimate_information": 24,
+        "status": "Active and expanding",
+        "resources": "Tech-dependent, rebuilding after Magistrate threats",
+        "capability": "Information omniscience within network range",
+        "relationship_to_omo": "HIGH SYNERGY - librarian meets information broker"
+      },
+      "gcpd": {
+        "commissioner": "Renee Montoya",
+        "force_size": 3500,
+        "status": "Stretched thin, systemic corruption ongoing",
+        "morale": "Low - resources insufficient",
+        "relationship_to_batman": "Tense cooperation, official opposition to vigilantes"
+      },
+      "organized_crime_penguin": {
+        "leader": "Oswald Cobblepot",
+        "tier_estimate": 14,
+        "status": "Temporarily absent from Gotham (retired to Metropolis)",
+        "territory": "East End (currently contested)",
+        "operatives": "Second-in-command managing operations",
+        "return_timeline": "Expected 2021 (canon: returns mid-year)"
+      },
+      "organized_crime_red_hood": {
+        "leader": "Jason Todd",
+        "tier_estimate": 16,
+        "status": "Actively expanding territory",
+        "territory": "East End portions, street-level operations",
+        "philosophy": "Pragmatic vigilante, negotiates with Batman",
+        "recent_activity": "Taking advantage of power vacuum"
+      },
+      "magistrate_program": {
+        "status": "Proposal stage / authorization pending",
+        "creator": "Simon Saint (private corporate security)",
+        "sponsor": "Mayor Nakano (new leadership)",
+        "mandate": "Anti-vigilante peacekeeping, martial law authority",
+        "public_perception": "Mixed - safety vs. corporate control concerns",
+        "deployment_readiness": "Units in preparation, not yet active"
+      }
+    }
+  },
+
+  "justice_league_state": {
+    "status": "Active and Reorganized",
+    "roster_changes_post_death_metal": [
+      "Superman - Public identity revealed (Jonathan Kent's influence)",
+      "Wonder Woman - Temporarily absent (mystical realm quest)",
+      "Flash - Wally West primary (Barry Allen cooperation)",
+      "Green Arrow - Highest net wealth post-Bruce Wayne depletion",
+      "Black Adam - Controversial JL member addition",
+      "Black Canary - New tactical leader role",
+      "Aquaman - Stable, Atlantean interests",
+      "Hawkgirl - Stable, cosmic awareness"
+    ],
+    "key_heroes": {
+      "superman": {
+        "tier": 23,
+        "status": "Active, public identity",
+        "location": "Metropolis / JL coordination",
+        "note": "Earth-shattering power level, world-scale threats only"
+      },
+      "wonder_woman": {
+        "tier": 22,
+        "status": "Mystically displaced (temporary)",
+        "location": "Asgardian realm (Infinite Frontier #0)",
+        "return_timeline": "Expected early 2021"
+      },
+      "flash_wally_west": {
+        "tier": 22,
+        "status": "Active, primary Flash",
+        "location": "Central City / JL coordination",
+        "note": "Speed Force anchor, temporal awareness"
+      },
+      "green_lantern_hal_jordan": {
+        "tier": 20,
+        "status": "Active",
+        "location": "Intergalactic / occasional Earth coordination",
+        "note": "Willpower constructs, limited Earth engagement"
+      },
+      "aquaman": {
+        "tier": 20,
+        "status": "Active",
+        "location": "Atlantis / Atlantean-surface coordination",
+        "note": "Ocean-scale authority, limited land engagement"
+      }
+    }
+  },
+
+  "major_threats_active": [
+    {
+      "threat_name": "Arkham Asylum Escapees",
+      "status": "Ongoing",
+      "scope": "50+ metahuman villains at large",
+      "impact": "Street-level crime wave, chaos",
+      "responsible_faction": "A-Day destruction (Joker/Bane conflict)",
+      "priority": "High - Batman tracking",
+      "escapee_count_remaining": 35,
+      "notable_escapees": ["Scarecrow (active)", "Two-Face", "Harley Quinn (sympathetic)", "Man-Bat", "various minor villains"]
+    },
+    {
+      "threat_name": "A-Day Arkham Tower Reconstruction",
+      "status": "Planning / Early Construction",
+      "scope": "New maximum security facility needed",
+      "impact": "Temporary prison overflow, systemic weakness",
+      "timeline": "Construction through 2021",
+      "complication": "Debate over new facility mandate and purpose"
+    },
+    {
+      "threat_name": "Magistrate Program Authorization",
+      "status": "Proposal / Negotiation Phase",
+      "scope": "Corporate police state potential",
+      "impact": "Batman-Magistrate conflict (Fear State arc)",
+      "responsible_parties": ["Simon Saint", "Mayor Nakano"],
+      "threat_level": "High - Freedom vs Safety",
+      "escalation_path": "Authorization → Deployment → Martial Law"
+    },
+    {
+      "threat_name": "Organized Crime Power Vacuum",
+      "status": "Active gang warfare",
+      "scope": "Multiple factions fighting for territory",
+      "impact": "Street violence, civilian casualties rising",
+      "primary_combatants": ["Penguin operatives", "Red Hood", "independents"],
+      "crime_increase": "+35% vs. pre-Joker War baseline"
+    },
+    {
+      "threat_name": "Post-Death Metal Supernatural Rifts",
+      "status": "Stabilizing (residual activity)",
+      "scope": "Dimensional instability, minor incursions",
+      "impact": "Low immediate threat, monitoring required",
+      "escalation_risk": "Could lead to Crisis precursor events"
+    },
+    {
+      "threat_name": "Darkseid Return Warnings",
+      "status": "Intelligence chatter",
+      "scope": "New Age Gods involvement",
+      "impact": "JL concern level, world-scale threat potential",
+      "source": "Infinite Frontier #0 events",
+      "timeline": "Uncertain - under investigation"
+    }
+  ],
+
+  "key_npc_contacts": {
+    "barbara_gordon_oracle": {
+      "role": "Information Broker / Hacker",
+      "tier_information": 24,
+      "relationship_to_omo": "High synergy - natural ally",
+      "entry_point": "Research partnership through shared knowledge framework",
+      "location": "Gotham Clocktower (headquarters)"
+    },
+    "bruce_wayne_batman": {
+      "role": "City Protector",
+      "tier": 18,
+      "status": "Depleted resources, rebuilding",
+      "relationship_to_omo": "Information exchange → alliance potential",
+      "trust_level": "Cautious cooperation",
+      "location": "Various (Batcave locations, mobile)"
+    },
+    "dick_grayson_nightwing": {
+      "role": "Acrobat / Mentor Type",
+      "tier": 16,
+      "relationship_to_omo": "Natural mentor potential, team-building",
+      "personality": "Empathetic heroism, good moral compass",
+      "location": "Gotham rooftops / coordination points"
+    },
+    "tim_drake_red_robin": {
+      "role": "Detective / Technologist",
+      "tier": 15,
+      "relationship_to_omo": "Research partnership potential",
+      "expertise": "Detective work, tech specialization",
+      "location": "Gotham investigation sites"
+    },
+    "oswald_cobblepot_penguin": {
+      "role": "Crime Boss",
+      "tier": 14,
+      "status": "Temporarily absent from Gotham",
+      "relationship_to_omo": "Transaction-based negotiation possible",
+      "personality": "Profit-driven, information trading",
+      "current_location": "Metropolis (2021 canon)"
+    },
+    "jason_todd_red_hood": {
+      "role": "Street-Level Warrior",
+      "tier": 16,
+      "relationship_to_omo": "Pragmatic cooperation possible",
+      "territory": "East End, expanding",
+      "philosophy": "Boundary-pushing pragmatism",
+      "recent_activity": "Exploiting crime vacuum"
+    },
+    "mayor_nakano": {
+      "role": "Government Authority",
+      "tier": 2,
+      "relationship_to_omo": "Neutral official contact",
+      "status": "New administration, vulnerable to manipulation",
+      "recent_pressure": "Simon Saint pushing Magistrate program"
+    },
+    "simon_saint": {
+      "role": "Corporate Threat",
+      "tier": 5,
+      "relationship_to_omo": "Potential antagonist",
+      "agenda": "Magistrate Program implementation",
+      "threat_level": "Institutional, not personal"
+    }
+  },
+
+  "accessible_regions": {
+    "metropolis": {
+      "distance_from_gotham": "~1000 miles",
+      "primary_hero": "Superman",
+      "threat_scale": "World-class",
+      "travel_method": "Train / Plane / Teleportation",
+      "relevance_to_omo": "Superman tier (23) - vastly exceeds starting capability",
+      "contact_potential": "Minimal (early game)"
+    },
+    "central_city": {
+      "distance_from_gotham": "~500 miles",
+      "primary_hero": "Flash (Wally West)",
+      "threat_scale": "Speedster-class, temporal anomalies",
+      "travel_method": "Ground or Speed Force proximity",
+      "relevance_to_omo": "Mentorship potential long-term",
+      "contact_potential": "Low (early game)"
+    },
+    "star_city": {
+      "distance_from_gotham": "~2500 miles",
+      "primary_hero": "Green Arrow",
+      "threat_scale": "Political activism, street-level",
+      "travel_method": "West Coast travel required",
+      "relevance_to_omo": "Minimal (geographically remote)"
+    },
+    "washington_dc": {
+      "distance_from_gotham": "~400 miles",
+      "primary_hero": "Wonder Woman (currently displaced)",
+      "threat_scale": "Divine/mythological",
+      "travel_method": "Ground travel or teleportation",
+      "relevance_to_omo": "Minimal (goddess-tier concerns)"
+    },
+    "atlantis": {
+      "distance_from_gotham": "Ocean-based",
+      "primary_hero": "Aquaman",
+      "threat_scale": "Atlantean politics, oceanic threats",
+      "travel_method": "Water-based only or special transport",
+      "relevance_to_omo": "Very low (no water capabilities)"
+    }
+  },
+
+  "premonition_scale_examples": {
+    "street_level_tier_3_5": {
+      "example_actor": "Gang member",
+      "example_action": "Drug deal turned violent",
+      "consequences": "3 civilians dead, street blocked",
+      "dc_reward": 50,
+      "difficulty": "Preventable with street presence"
+    },
+    "city_scale_tier_6_10": {
+      "example_actor": "Scarecrow",
+      "example_action": "Fear toxin release in subway",
+      "consequences": "200+ civilians dead/traumatized, infrastructure damage",
+      "dc_reward": 150,
+      "difficulty": "Requires research and planning"
+    },
+    "regional_scale_tier_11_15": {
+      "example_actor": "Metahuman terrorist collective",
+      "example_action": "Explosive assault on government building",
+      "consequences": "500+ deaths, national security breach",
+      "dc_reward": 300,
+      "difficulty": "Requires allies/JL coordination"
+    },
+    "world_scale_tier_16_plus": {
+      "example_actor": "Cosmic entity / multiversal threat",
+      "example_action": "Reality incursion beginning",
+      "consequences": "Millions at risk, world-ending scenario",
+      "dc_reward": 500,
+      "difficulty": "JL+ intervention mandatory"
+    }
+  },
+
+  "information_networks": {
+    "public_access": {
+      "available": ["GCPD records (public crime reporting)", "News archives", "Internet databases", "Social media villain tracking"],
+      "skill_advantage": "Library sciences expert (Omo) - easy access"
+    },
+    "mid_campaign_access": {
+      "available": ["GCPD detective partnership", "Wayne Tech resources (corporate)", "Oracle's network (information trading)"],
+      "requirement": "Batman contact + trust building"
+    },
+    "late_campaign_access": {
+      "available": ["JL restricted databases", "Multi-Earth records", "Ancient magical texts"],
+      "requirement": "World-scale threat engagement + hero standing"
+    }
+  },
+
+  "campaign_progression_timeline": {
+    "phase_1_street_level": {
+      "sessions_estimate": "1-5",
+      "tier_range": "2-4",
+      "goals": [
+        "Learn premonition system",
+        "Earn 150-300 DC points",
+        "First stat upgrades",
+        "Establish Gotham presence",
+        "Contact with Oracle or Batman network"
+      ],
+      "threats": "Street gangs, escapees, minor metahumans"
+    },
+    "phase_2_city_scale": {
+      "sessions_estimate": "6-15",
+      "tier_range": "4-10",
+      "goals": [
+        "Multiple abilities (reroll practice)",
+        "Organized crime conflicts",
+        "Team-up potential with Bat-family",
+        "Travel to nearby cities",
+        "Supernatural threat emergence"
+      ],
+      "threats": "Penguin return, Magistrate deployment, fear toxin events"
+    },
+    "phase_3_regional_scale": {
+      "sessions_estimate": "16-25",
+      "tier_range": "10-18",
+      "goals": [
+        "JL-adjacent threats",
+        "Multiversal incursions begin",
+        "Established hero standing",
+        "Cosmic awareness growing"
+      ],
+      "threats": "Darkseid activity, dimensional rifts, Fear State crisis"
+    },
+    "phase_4_endgame": {
+      "sessions_estimate": "26+",
+      "tier_range": "18-22",
+      "goals": [
+        "World-scale threats",
+        "Full JL cooperation",
+        "Multiverse mechanics familiar",
+        "Emperor Omo established in DC Universe"
+      ],
+      "threats": "World-ending scenarios, cosmic entities, Crisis precursors"
+    }
+  },
+
+  "metadata": {
+    "created_date": "2021-02-14T00:00:00Z",
+    "last_updated": "2021-02-14T00:00:00Z",
+    "version": "1.0",
+    "source": "DC Infinite Frontier 2021 canon - February snapshot",
+    "narrative_framework": "Crisis recovery + crime wave + institutional threats",
+    "secondary_llm_update_frequency": "Weekly escalation updates recommended",
+    "flask_integration": "All escalation_indicators support /world/escalation/update POST endpoint"
+  }
+}
